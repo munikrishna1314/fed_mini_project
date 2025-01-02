@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Image Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI Image Generator</h1>
+        <p>Enter a description below to generate an image using AI technology.</p>
+        <form id="generate-image-form">
+            <input type="text" id="form-input" placeholder="Enter category..." required>
+            <button type="submit">Generate Image</button>
+        </form>
+        <div id="loading-message" style="text-align: center; color: #4CAF50; margin-top: 10px;"></div>
+        <div id="images-visible" style="display: none;">
+            <p id="imageContainerText">Generated Image:</p>
+            <img id="generated-image" alt="Generated Image" />
+            <button id="clear-button" style="margin-top: 10px;">Clear</button>
+            <button id="download-button" style="margin-top: 10px;">Download Image</button>
+        </div>
+        <p id="error-message" style="text-align: center; color: red; margin-top: 10px;"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0; /* Light gray background */
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container Styles */
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: #ffffff; /* White background */
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+/* Hover Effect for Container */
+.container:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Header Styles */
+h1 {
+    text-align: center;
+    color: #4CAF50; /* Green color */
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Input Styles */
+input[type="text"] {
+    flex: 1;
+    padding: 12px 15px;
+    border-radius: 5px;
+    border: 2px solid #4CAF50; /* Green border */
+    margin-right: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+/* Focus Effect for Input */
+input[type="text"]:focus {
+    border-color: #45a049; /* Darker green on focus */
+    outline: none;
+}
+
+/* Button Styles */
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s, box-shadow 0.2s ease;
+}
+
+/* Hover Effect for Button */
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Active Effect for Button */
+button:active {
+    transform: scale(0.95);
+}
+
+/* Images Section */
+#images-visible {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Generated Image Styles */
+#generated-image {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: 2px solid #4CAF50; /* Green border */
+    padding: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Error Message Styles */
+#error-message {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Loading Message Styles */
+#loading-message {
+    text-align: center;
+    color: #4CAF50; /* Green color */
+    margin-top: 10px;
+}
+
+/* Additional Background Colors */
+.section-light {
+    background-color: #e8f5e9; /* Light green background */
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.section-dark {
+    background-color: #424242; /* Dark gray background */
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.section-info {
+    background-color: #e3f2fd; /* Light blue background */
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.section-warning {
+    background-color: #fff3e0; /* Light orange background */
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    form {
+        flex-direction: column;
+    }
+
+    input[type="text"] {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
